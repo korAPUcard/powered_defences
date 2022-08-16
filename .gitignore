@@ -8,6 +8,7 @@ build/
 
 # MCreator workspace
 .mcreator/
+powered_defences.mcreator
 
 # Minecraft client/server files
 run/
@@ -18,4 +19,3 @@ run/
 # Other Files (In Eclipse)
 .classpath
 .project
-powered_defences.mcreator
