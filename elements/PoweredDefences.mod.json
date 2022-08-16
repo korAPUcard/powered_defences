@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "Powered Defences",
+    "icon": {
+      "value": "CUSTOM:ForcefieldBarrierVertical"
+    },
+    "showSearch": false
+  }
+}

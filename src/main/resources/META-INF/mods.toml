@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="Creative Commons Attribution-ShareAlike 4.0"
+
+[[mods]]
+modId="powered_defences"
+version="0.1.0"
+displayName="Powered Defences"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net"
+authors="KOR_APUcard, MCreator"
+
+[[dependencies.powered_defences]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
