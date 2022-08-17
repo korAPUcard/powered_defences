@@ -1,6 +1,9 @@
 # Gradle build system ignores
 .gradle/
 build/
+build.gradle
+gradlew.bat
+mcreator.gradle
 
 # Other IDE related folders
 .idea/
