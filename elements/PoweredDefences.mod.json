@@ -4,7 +4,7 @@
   "definition": {
     "name": "Powered Defences",
     "icon": {
-      "value": "CUSTOM:ForcefieldBarrierVertical"
+      "value": "CUSTOM:VerticalForcefieldBarrier"
     },
     "showSearch": false
   }
