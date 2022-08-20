@@ -17,7 +17,7 @@ public class PoweredDefencesModTabs {
 		TAB_POWERED_DEFENCES = new CreativeModeTab("tabpowered_defences") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL.get());
+				return new ItemStack(PoweredDefencesModItems.VERTICAL_FORCEFIELD_BARRIER.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

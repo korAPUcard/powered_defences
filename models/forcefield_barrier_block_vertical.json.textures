@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "forcefield_barrier_block"
+      },
+      "name": "default"
+    }
+  }
+}

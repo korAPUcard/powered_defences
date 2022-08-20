@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "powered_defences:block/forcefield_barrier_vertical_double_shield_emit"
+    },
+    "facing=east": {
+      "model": "powered_defences:block/forcefield_barrier_vertical_double_shield_emit",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "powered_defences:block/forcefield_barrier_vertical_double_shield_emit",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "powered_defences:block/forcefield_barrier_vertical_double_shield_emit",
+      "y": 270
+    }
+  }
+}

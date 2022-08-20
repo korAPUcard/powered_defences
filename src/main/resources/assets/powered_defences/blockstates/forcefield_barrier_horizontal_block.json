@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "powered_defences:block/forcefield_barrier_horizontal_block"
+    }
+  }
+}

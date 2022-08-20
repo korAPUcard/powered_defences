@@ -13,7 +13,7 @@
 -----
 
 ### Description
-This MOD will add variable protection devices and defense systems to secure your bases.
+This MOD will add variable protection devices and defense systems to secure your bases.   
 Most devices will required the power. Commonly used Forge Energy(FE).
 
 **It's still in development.**

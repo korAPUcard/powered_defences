@@ -1,5 +1,5 @@
 {
-  "parent": "powered_defences:custom/forcefield_barrier_vertical",
+  "parent": "powered_defences:custom/forcefield_barrier_vertical_double",
   "textures": {
     "all": "powered_defences:blocks/forcefield_barrier",
     "particle": "powered_defences:blocks/forcefield_barrier",

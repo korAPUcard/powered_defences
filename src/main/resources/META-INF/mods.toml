@@ -9,6 +9,9 @@ displayName="Powered Defences"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 authors="KOR_APUcard, MCreator"
+description='''
+This MOD will add variable protection devices and defense systems to secure your bases.\nMost devices will required the power. Commonly used Forge Energy(FE).
+'''
 
 [[dependencies.powered_defences]]
     modId="minecraft"
@@ -19,4 +22,22 @@ authors="KOR_APUcard, MCreator"
 
 
 
+[[dependencies.powered_defences]]
+    modId="apuclib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.powered_defences]]
+    modId="mekanism"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.powered_defences]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

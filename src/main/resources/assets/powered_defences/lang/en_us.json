@@ -1,4 +1,25 @@
 {
-  "block.powered_defences.forcefield_barrier_vertical": "Vertical Forcefield Barrier",
-  "itemGroup.tabpowered_defences": "Powered Defences"
+  "death.attack.electric_shock": "%1$s has died of constant electric shock.",
+  "subtitles.forcefield_barrier_loop": "Forcefield barrier hums",
+  "item.powered_defences.vertical_forcefield_barrier": "Vertical Forcefield Barrier",
+  "death.attack.radiation_exposure": "%1$s has died from radiation exposure.",
+  "death.attack.forcefield_slice": "%1$s has been cut through a sharp section of an force field.",
+  "block.powered_defences.forcefield_barrier_vertical_block": "§bForcefield Barrier Vertical Block",
+  "block.powered_defences.forcefield_barrier_horizontal_single": "§bblock.powered_defences.forcefield_barrier_horizontal_single",
+  "itemGroup.tabpowered_defences": "Powered Defences",
+  "block.powered_defences.forcefield_barrier_vertical_single": "§bblock.powered_defences.forcefield_barrier_vertical_single",
+  "death.attack.laser_slice": "%1$s was slashed by a powerful laser beam.",
+  "block.powered_defences.forcefield_barrier_horizontal_double": "§bblock.powered_defences.forcefield_barrier_horizontal_double",
+  "block.powered_defences.forcefield_barrier_horizontal_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_double_shieldemit",
+  "subtitles.forcefield_barrier_deactivated": "Forcefield barrier deactivated",
+  "block.powered_defences.forcefield_barrier_vertical_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_single_shieldemit",
+  "block.powered_defences.forcefield_barrier_vertical_double": "§bblock.powered_defences.forcefield_barrier_vertical_double",
+  "block.powered_defences.forcefield_barrier_horizontal_block": "Forcefield Barrier Horizontal Block",
+  "subtitles.forcefield_barrier_touch_loop": "Forcefield barrier buzz",
+  "item.powered_defences.horizontal_forcefield_barrier": "Horizontal Forcefield Barrier",
+  "subtitles.forcefield_barrier_activated": "Forcefield barrier activated",
+  "death.attack.forcefield_shock": "%1$s has been decomposed by the strong impact of the force field.",
+  "block.powered_defences.forcefield_barrier_vertical_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_double_shieldemit",
+  "death.attack.disintegration": "%1$s has been disintegrated into atom unit.",
+  "block.powered_defences.forcefield_barrier_horizontal_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_single_shieldemit"
 }

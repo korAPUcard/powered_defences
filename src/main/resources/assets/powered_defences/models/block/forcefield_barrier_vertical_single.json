@@ -1,0 +1,9 @@
+{
+  "parent": "powered_defences:custom/forcefield_barrier_vertical_single",
+  "textures": {
+    "all": "powered_defences:blocks/forcefield_barrier",
+    "particle": "powered_defences:blocks/forcefield_barrier",
+    "0": "powered_defences:blocks/forcefield_barrier",
+    "1": "powered_defences:blocks/forcefield_barrier_powered"
+  }
+}
