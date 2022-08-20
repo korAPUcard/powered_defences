@@ -22,3 +22,6 @@ run/
 # Other Files (In Eclipse)
 .classpath
 .project
+
+# Other project resource files
+elements/
