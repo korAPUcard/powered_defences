@@ -6,7 +6,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
@@ -82,23 +81,26 @@ public class ForcefieldBarrierHorizontalSingleBlock extends Block implements Sim
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		switch ((Direction) state.getValue(FACING)) {
-			case SOUTH :
-			default :
-				return box(0, 7, 0, 16, 9, 1.5).move(offset.x, offset.y, offset.z);
-			case NORTH :
-				return box(0, 7, 14.5, 16, 9, 16).move(offset.x, offset.y, offset.z);
-			case EAST :
-				return box(0, 7, 0, 1.5, 9, 16).move(offset.x, offset.y, offset.z);
-			case WEST :
-				return box(14.5, 7, 0, 16, 9, 16).move(offset.x, offset.y, offset.z);
-		}
+
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 7, 0, 16, 9, 1.5);
+			case NORTH -> box(0, 7, 14.5, 16, 9, 16);
+			case EAST -> box(0, 7, 0, 1.5, 9, 16);
+			case WEST -> box(14.5, 7, 0, 16, 9, 16);
+		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING, WATERLOGGED);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
+			return this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, flag);
+		return this.defaultBlockState().setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -107,14 +109,6 @@ public class ForcefieldBarrierHorizontalSingleBlock extends Block implements Sim
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;;
-		if (context.getClickedFace() == Direction.UP || context.getClickedFace() == Direction.DOWN)
-			return this.defaultBlockState().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, flag);
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace()).setValue(WATERLOGGED, flag);
 	}
 
 	@Override

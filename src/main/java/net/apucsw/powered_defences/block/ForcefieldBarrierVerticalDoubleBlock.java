@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
@@ -83,27 +82,26 @@ public class ForcefieldBarrierVerticalDoubleBlock extends Block implements Simpl
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		switch ((Direction) state.getValue(FACING)) {
-			case SOUTH :
-			default :
-				return Shapes.or(box(7, 0, 14.5, 9, 16, 16), box(7, 0, 0, 9, 16, 1.5)).move(offset.x, offset.y, offset.z);
-			case NORTH :
-				return Shapes.or(box(7, 0, 0, 9, 16, 1.5), box(7, 0, 14.5, 9, 16, 16)).move(offset.x, offset.y, offset.z);
-			case EAST :
-				return Shapes.or(box(14.5, 0, 7, 16, 16, 9), box(0, 0, 7, 1.5, 16, 9)).move(offset.x, offset.y, offset.z);
-			case WEST :
-				return Shapes.or(box(0, 0, 7, 1.5, 16, 9), box(14.5, 0, 7, 16, 16, 9)).move(offset.x, offset.y, offset.z);
-			case UP :
-				return Shapes.or(box(7, 14.5, 0, 9, 16, 16), box(7, 0, 0, 9, 1.5, 16)).move(offset.x, offset.y, offset.z);
-			case DOWN :
-				return Shapes.or(box(7, 0, 0, 9, 1.5, 16), box(7, 14.5, 0, 9, 16, 16)).move(offset.x, offset.y, offset.z);
-		}
+
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(7, 0, 14.5, 9, 16, 16), box(7, 0, 0, 9, 16, 1.5));
+			case NORTH -> Shapes.or(box(7, 0, 0, 9, 16, 1.5), box(7, 0, 14.5, 9, 16, 16));
+			case EAST -> Shapes.or(box(14.5, 0, 7, 16, 16, 9), box(0, 0, 7, 1.5, 16, 9));
+			case WEST -> Shapes.or(box(0, 0, 7, 1.5, 16, 9), box(14.5, 0, 7, 16, 16, 9));
+			case UP -> Shapes.or(box(7, 14.5, 0, 9, 16, 16), box(7, 0, 0, 9, 1.5, 16));
+			case DOWN -> Shapes.or(box(7, 0, 0, 9, 1.5, 16), box(7, 14.5, 0, 9, 16, 16));
+		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING, WATERLOGGED);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -112,12 +110,6 @@ public class ForcefieldBarrierVerticalDoubleBlock extends Block implements Simpl
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;;
-		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	@Override
