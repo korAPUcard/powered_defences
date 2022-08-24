@@ -26,5 +26,6 @@
   "death.attack.forcefield_shock": "%1$s 은(는) 역장의 강한 충격으로 분해되었습니다.",
   "description.powered_defences.item.horizontal_forcefield_barrier": "§7전기를 사용해 역장을 형성하여 방벽을 만듭니다. 단순히 총알을 막아내는 것부터 허가되지 않은 모든 개체의 출입도 제한할 수 있습니다.",
   "description.powered_defences.item.vertical_forcefield_barrier": "§7전기를 사용해 역장을 형성하여 방벽을 만듭니다. 단순히 총알을 막아내는 것부터 허가되지 않은 모든 개체의 출입도 제한할 수 있습니다.",
-  "death.attack.disintegration": "%1$s 은(는) 원자 단위로 분해되었습니다."
+  "death.attack.disintegration": "%1$s 은(는) 원자 단위로 분해되었습니다.",
+  "description.powered_defences.tooltip.key.show_description": "§b%s §7키를 눌러 설명 보기"
 }
