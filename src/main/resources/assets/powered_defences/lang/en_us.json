@@ -14,7 +14,7 @@
   "subtitles.forcefield_barrier_deactivated": "Forcefield barrier deactivated",
   "block.powered_defences.forcefield_barrier_vertical_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_single_shieldemit",
   "block.powered_defences.forcefield_barrier_vertical_double": "§bblock.powered_defences.forcefield_barrier_vertical_double",
-  "block.powered_defences.forcefield_barrier_horizontal_block": "Forcefield Barrier Horizontal Block",
+  "block.powered_defences.forcefield_barrier_horizontal_block": "§bForcefield Barrier Horizontal Block",
   "subtitles.forcefield_barrier_touch_loop": "Forcefield barrier buzz",
   "item.powered_defences.horizontal_forcefield_barrier": "Horizontal Forcefield Barrier",
   "subtitles.forcefield_barrier_activated": "Forcefield barrier activated",
