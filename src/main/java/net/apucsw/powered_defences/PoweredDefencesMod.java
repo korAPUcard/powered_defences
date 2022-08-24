@@ -27,9 +27,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.apucsw.powered_defences.init.PoweredDefencesModTabs;
-import net.apucsw.powered_defences.init.PoweredDefencesModItems;
-import net.apucsw.powered_defences.init.PoweredDefencesModBlocks;
-import net.apucsw.powered_defences.init.PoweredDefencesModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -47,10 +44,6 @@ public class PoweredDefencesMod {
 	public PoweredDefencesMod() {
 		PoweredDefencesModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		PoweredDefencesModBlocks.REGISTRY.register(bus);
-		PoweredDefencesModItems.REGISTRY.register(bus);
-
-		PoweredDefencesModBlockEntities.REGISTRY.register(bus);
 
 	}
 
