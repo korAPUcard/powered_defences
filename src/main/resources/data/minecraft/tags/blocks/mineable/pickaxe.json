@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "powered_defences:forcefield_barrier_vertical_single",
+    "powered_defences:forcefield_barrier_vertical_double",
+    "powered_defences:forcefield_barrier_horizontal_single",
+    "powered_defences:forcefield_barrier_horizontal_double"
+  ]
+}
