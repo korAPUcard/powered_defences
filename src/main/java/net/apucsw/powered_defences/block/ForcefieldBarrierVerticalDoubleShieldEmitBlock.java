@@ -158,7 +158,7 @@ public class ForcefieldBarrierVerticalDoubleShieldEmitBlock extends Block
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		Forcefield_EntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		Forcefield_EntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

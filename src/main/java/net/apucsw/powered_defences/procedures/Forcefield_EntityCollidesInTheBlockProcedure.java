@@ -4,17 +4,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.apucsw.powered_defences.util.AdditionalDamageSource;
-
 public class Forcefield_EntityCollidesInTheBlockProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -27,7 +22,6 @@ public class Forcefield_EntityCollidesInTheBlockProcedure {
 							SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
-			entity.hurt(AdditionalDamageSource.FORCEFIELD_SHOCK, 1);
 		}
 	}
 }
