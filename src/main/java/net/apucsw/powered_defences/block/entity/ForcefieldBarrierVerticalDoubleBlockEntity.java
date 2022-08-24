@@ -98,7 +98,7 @@ public class ForcefieldBarrierVerticalDoubleBlockEntity extends RandomizableCont
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("§bblock.powered_defences.forcefield_barrier_vertical_double");
+		return new TextComponent("§bVertical Forcefield Barrier (Double)");
 	}
 
 	@Override

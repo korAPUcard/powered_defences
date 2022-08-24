@@ -98,7 +98,7 @@ public class ForcefieldBarrierHorizontalSingleBlockEntity extends RandomizableCo
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("§bblock.powered_defences.forcefield_barrier_horizontal_single");
+		return new TextComponent("§bHorizontal Forcefield Barrier (Single)");
 	}
 
 	@Override

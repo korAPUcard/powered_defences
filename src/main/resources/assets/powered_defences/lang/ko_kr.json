@@ -9,17 +9,17 @@
   "itemGroup.tabpowered_defences": "Powered Defences",
   "block.powered_defences.forcefield_barrier_vertical_single": "§bblock.powered_defences.forcefield_barrier_vertical_single",
   "death.attack.laser_slice": "%1$s 은(는) 강력한 레이저 빔에 베여 썰렸습니다.",
-  "block.powered_defences.forcefield_barrier_horizontal_double": "§bblock.powered_defences.forcefield_barrier_vertical_double",
-  "block.powered_defences.forcefield_barrier_horizontal_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_double_shieldemit",
+  "block.powered_defences.forcefield_barrier_horizontal_double": "§bblock.powered_defences.forcefield_barrier_horizontal_double",
+  "block.powered_defences.forcefield_barrier_horizontal_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_horizontal_double_shield_emit",
   "subtitles.forcefield_barrier_deactivated": "역장 방벽 비활성화 됨",
   "block.powered_defences.forcefield_barrier_vertical_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_single",
   "block.powered_defences.forcefield_barrier_vertical_double": "§bblock.powered_defences.forcefield_barrier_vertical_double",
-  "block.powered_defences.forcefield_barrier_horizontal_block": "Forcefield Barrier Horizontal Block",
+  "block.powered_defences.forcefield_barrier_horizontal_block": "§bForcefield Barrier Horizontal Block",
   "subtitles.forcefield_barrier_touch_loop": "역장 방벽 지직거림",
   "item.powered_defences.horizontal_forcefield_barrier": "수평형 역장 방벽",
   "subtitles.forcefield_barrier_activated": "역장 방벽 활성화 됨",
   "death.attack.forcefield_shock": "%1$s 은(는) 역장의 강한 충격으로 분해되었습니다.",
-  "block.powered_defences.forcefield_barrier_vertical_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_double",
+  "block.powered_defences.forcefield_barrier_vertical_double_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_double_shield_emit",
   "death.attack.disintegration": "%1$s 은(는) 원자 단위로 분해되었습니다.",
-  "block.powered_defences.forcefield_barrier_horizontal_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_vertical_single_shieldemit"
+  "block.powered_defences.forcefield_barrier_horizontal_single_shield_emit": "§bblock.powered_defences.forcefield_barrier_horizontal_single_shield_emit"
 }

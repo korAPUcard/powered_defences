@@ -98,7 +98,7 @@ public class ForcefieldBarrierVerticalDoubleShieldEmitBlockEntity extends Random
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("§bblock.powered_defences.forcefield_barrier_vertical_double_shieldemit");
+		return new TextComponent("§bVertical Forcefield Barrier (Double, Shield Emit)");
 	}
 
 	@Override
