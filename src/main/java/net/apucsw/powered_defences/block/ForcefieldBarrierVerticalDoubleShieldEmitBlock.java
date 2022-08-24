@@ -34,6 +34,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -42,6 +43,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.Minecraft;
 
 import net.apucsw.powered_defences.procedures.Forcefield_EntityCollidesInTheBlockProcedure;
+import net.apucsw.powered_defences.procedures.FFBV_TickUpdateProcedure;
 import net.apucsw.powered_defences.procedures.FFBV_NeighbourBlockChangesProcedure;
 import net.apucsw.powered_defences.init.PoweredDefencesModItems;
 import net.apucsw.powered_defences.init.PoweredDefencesModBlocks;
@@ -131,9 +133,26 @@ public class ForcefieldBarrierVerticalDoubleShieldEmitBlock extends Block
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 10);
+	}
+
+	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		FFBV_NeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		FFBV_TickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@OnlyIn(Dist.CLIENT)
