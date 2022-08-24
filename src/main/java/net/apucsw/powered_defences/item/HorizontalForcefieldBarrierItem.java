@@ -1,6 +1,7 @@
 
 package net.apucsw.powered_defences.item;
 
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
@@ -31,7 +32,11 @@ public class HorizontalForcefieldBarrierItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TranslatableComponent("description.powered_defences.item.horizontal_forcefield_barrier"));
+		if(Screen.hasShiftDown()) {
+			list.add(new TranslatableComponent("description.powered_defences.item.horizontal_forcefield_barrier"));
+		} else {
+			list.add(new TranslatableComponent("description.powered_defences.tooltip.key.show_description"));
+		}
 	}
 
 	@Override

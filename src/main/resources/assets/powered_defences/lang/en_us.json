@@ -26,5 +26,6 @@
   "death.attack.forcefield_shock": "%1$s has been decomposed by the strong impact of the force field.",
   "description.powered_defences.item.horizontal_forcefield_barrier": "§7It uses electricity to form a force field to create a barrier. From simply blocking bullets to restricting access to all unauthorized entities.",
   "description.powered_defences.item.vertical_forcefield_barrier": "§7It uses electricity to form a force field to create a barrier. From simply blocking bullets to restricting access to all unauthorized entities.",
-  "death.attack.disintegration": "%1$s has been disintegrated into atom unit."
+  "death.attack.disintegration": "%1$s has been disintegrated into atom unit.",
+  "description.powered_defences.tooltip.key.show_description": "§7Hold §b%s §7for description."
 }

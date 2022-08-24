@@ -34,6 +34,8 @@ public class VerticalForcefieldBarrierItem extends Item {
 		super.appendHoverText(itemstack, world, list, flag);
 		if(Screen.hasShiftDown()) {
 			list.add(new TranslatableComponent("description.powered_defences.item.vertical_forcefield_barrier"));
+		} else {
+			list.add(new TranslatableComponent("description.powered_defences.tooltip.key.show_description"));
 		}
 	}
 
