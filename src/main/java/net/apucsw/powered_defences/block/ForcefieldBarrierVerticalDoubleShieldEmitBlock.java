@@ -151,7 +151,7 @@ public class ForcefieldBarrierVerticalDoubleShieldEmitBlock extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		FFBV_TickUpdateProcedure.execute(world, x, y, z, blockstate);
+		FFBV_TickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}
 
