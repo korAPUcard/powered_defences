@@ -1,0 +1,42 @@
+{
+  "group": "machines",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:plates/netherite"
+    },
+    "1": {
+      "item": "mekanism:pellet_polonium"
+    },
+    "2": {
+      "tag": "forge:alloys/ultimate"
+    },
+    "3": {
+      "tag": "forge:plates/netherite"
+    },
+    "4": {
+      "tag": "forge:circuits/ultimate"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "6": {
+      "tag": "forge:plates/netherite"
+    },
+    "7": {
+      "item": "mekanism:pellet_polonium"
+    },
+    "8": {
+      "tag": "forge:alloys/ultimate"
+    }
+  },
+  "result": {
+    "item": "powered_defences:vertical_forcefield_barrier",
+    "count": 3
+  }
+}

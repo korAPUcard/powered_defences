@@ -1,0 +1,12 @@
+{
+	"type":"mekanism:enriching",
+	"input":{
+		"amount":1,
+		"ingredient":{
+			"item":"minecraft:netherite_ingot"
+		}
+	},
+	"output":{
+		"item":"powered_defences:netherite_plate"
+	}
+}
