@@ -19,14 +19,15 @@ import net.apucsw.powered_defences.PoweredDefencesMod;
 
 public class PoweredDefencesModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, PoweredDefencesMod.MODID);
-	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_SINGLE = block(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL_SINGLE,
-			null);
-	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_DOUBLE = block(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL_DOUBLE,
-			null);
 	public static final RegistryObject<Item> VERTICAL_FORCEFIELD_BARRIER = REGISTRY.register("vertical_forcefield_barrier",
 			() -> new VerticalForcefieldBarrierItem());
 	public static final RegistryObject<Item> HORIZONTAL_FORCEFIELD_BARRIER = REGISTRY.register("horizontal_forcefield_barrier",
 			() -> new HorizontalForcefieldBarrierItem());
+	public static final RegistryObject<Item> NETHERITE_PLATE = REGISTRY.register("netherite_plate", () -> new NetheritePlateItem());
+	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_SINGLE = block(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL_SINGLE,
+			null);
+	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_DOUBLE = block(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL_DOUBLE,
+			null);
 	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_BLOCK = block(PoweredDefencesModBlocks.FORCEFIELD_BARRIER_VERTICAL_BLOCK,
 			null);
 	public static final RegistryObject<Item> FORCEFIELD_BARRIER_VERTICAL_SINGLE_SHIELD_EMIT = block(

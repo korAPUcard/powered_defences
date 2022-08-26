@@ -3,10 +3,12 @@
   "key.powered_defences.show_description": "설명 보기",
   "death.attack.radiation_exposure": "%1$s 은(는) 방사능 피폭으로 사망했습니다.",
   "key.categories.powered_defences": "Powered Defences",
+  "description.powered_defences.tooltip.key.show_description": "§b%s §7키를 눌러 설명 보기",
   "block.powered_defences.forcefield_barrier_vertical_block": "§b수직형 역장 블럭",
   "block.powered_defences.forcefield_barrier_horizontal_single": "§수평형 역장 방벽 (단일)",
   "itemGroup.tabpowered_defences": "Powered Defences",
   "block.powered_defences.forcefield_barrier_vertical_single": "§b수직형 역장 방벽 (단일)",
+  "description.powered_defences.item.netherite_plate": "§7이 행성에서 가장 단단한 합금을 납작하게 만든 매우 튼튼한 합판입니다.",
   "subtitles.forcefield_barrier_deactivated": "역장 방벽 비활성화 됨",
   "block.powered_defences.forcefield_barrier_vertical_double": "§b수직형 역장 방벽 (이중)",
   "subtitles.forcefield_barrier_touch_loop": "역장 방벽 지직거림",
@@ -21,11 +23,11 @@
   "death.attack.laser_slice": "%1$s 은(는) 강력한 레이저 빔에 베여 썰렸습니다.",
   "block.powered_defences.forcefield_barrier_horizontal_double": "§b수평형 역장 방벽 (이중)",
   "block.powered_defences.forcefield_barrier_horizontal_double_shield_emit": "§b수평형 역장 방벽 (이중, 쉴드 방출)",
+  "item.powered_defences.netherite_plate": "네더라이트 판",
   "block.powered_defences.forcefield_barrier_vertical_single_shield_emit": "§b수직형 역장 방벽 (단일, 쉴드 방출)",
   "block.powered_defences.forcefield_barrier_horizontal_block": "§b수평형 역장 블럭",
   "death.attack.forcefield_shock": "%1$s 은(는) 역장의 강한 충격으로 분해되었습니다.",
   "description.powered_defences.item.horizontal_forcefield_barrier": "§7전기를 사용해 역장을 형성하여 방벽을 만듭니다. 단순히 총알을 막아내는 것부터 허가되지 않은 모든 개체의 출입도 제한할 수 있습니다.",
   "description.powered_defences.item.vertical_forcefield_barrier": "§7전기를 사용해 역장을 형성하여 방벽을 만듭니다. 단순히 총알을 막아내는 것부터 허가되지 않은 모든 개체의 출입도 제한할 수 있습니다.",
-  "death.attack.disintegration": "%1$s 은(는) 원자 단위로 분해되었습니다.",
-  "description.powered_defences.tooltip.key.show_description": "§b%s §7키를 눌러 설명 보기"
+  "death.attack.disintegration": "%1$s 은(는) 원자 단위로 분해되었습니다."
 }
