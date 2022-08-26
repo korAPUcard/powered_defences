@@ -1,5 +1,4 @@
 {
-  "group": "machines",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
@@ -37,6 +36,6 @@
   },
   "result": {
     "item": "powered_defences:vertical_forcefield_barrier",
-    "count": 3
+    "count": 1
   }
 }
