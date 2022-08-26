@@ -9,7 +9,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -36,7 +35,6 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
 import net.minecraft.server.level.ServerLevel;
@@ -128,11 +126,6 @@ public class ForcefieldBarrierVerticalDoubleBlock extends Block implements Simpl
 	}
 
 	@Override
-	public BlockPathTypes getAiPathNodeType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.OPEN;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.BLOCK;
 	}
@@ -176,7 +169,7 @@ public class ForcefieldBarrierVerticalDoubleBlock extends Block implements Simpl
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		FFBV_TickUpdateProcedure.execute(world, x, y, z, blockstate);
+		FFBV_TickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}
 

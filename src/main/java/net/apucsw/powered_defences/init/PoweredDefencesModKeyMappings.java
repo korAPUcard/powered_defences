@@ -20,8 +20,8 @@ import net.minecraft.client.KeyMapping;
 public class PoweredDefencesModKeyMappings {
 	public static final KeyMapping SHOW_DESCRIPTION = new KeyMapping("key.powered_defences.show_description", GLFW.GLFW_KEY_LEFT_SHIFT,
 			"key.categories.powered_defences");
-	public static final KeyMapping SHOW_DETAIL_INFORMATION = new KeyMapping("key.powered_defences.show_detail_information", GLFW.GLFW_KEY_Q,
-			"key.categories.powered_defences");
+	public static final KeyMapping SHOW_DETAIL_INFORMATION = new KeyMapping("key.powered_defences.show_detail_information",
+			GLFW.GLFW_KEY_LEFT_CONTROL, "key.categories.powered_defences");
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
