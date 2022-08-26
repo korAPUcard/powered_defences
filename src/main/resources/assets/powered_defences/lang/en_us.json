@@ -3,12 +3,10 @@
   "key.powered_defences.show_description": "Show Description",
   "death.attack.radiation_exposure": "%1$s has died from radiation exposure.",
   "key.categories.powered_defences": "Powered Defences",
-  "description.powered_defences.tooltip.key.show_description": "§7Hold §b%s §7for description.",
   "block.powered_defences.forcefield_barrier_vertical_block": "§bVertical Forcefield Block",
   "block.powered_defences.forcefield_barrier_horizontal_single": "§bHorizontal Forcefield Barrier (Single)",
   "itemGroup.tabpowered_defences": "Powered Defences",
   "block.powered_defences.forcefield_barrier_vertical_single": "§bVertical Forcefield Barrier (Single)",
-  "description.powered_defences.item.netherite_plate": "§7A very hard metal plate pressed from the hardest alloy on the planet.",
   "subtitles.forcefield_barrier_deactivated": "Forcefield barrier deactivated",
   "block.powered_defences.forcefield_barrier_vertical_double": "§bVertical Forcefield Barrier (Double)",
   "subtitles.forcefield_barrier_touch_loop": "Forcefield barrier buzz",
@@ -23,11 +21,11 @@
   "death.attack.laser_slice": "%1$s was slashed by a powerful laser beam.",
   "block.powered_defences.forcefield_barrier_horizontal_double": "§bHorizontal Forcefield Barrier (Double)",
   "block.powered_defences.forcefield_barrier_horizontal_double_shield_emit": "§bHorizontal Forcefield Barrier (Double, Shield Emit)",
-  "item.powered_defences.netherite_plate": "Netherite Plate",
   "block.powered_defences.forcefield_barrier_vertical_single_shield_emit": "§bVertical Forcefield Barrier(Single, Shield Emit)",
   "block.powered_defences.forcefield_barrier_horizontal_block": "§bHorizontal Forcefield Block",
   "death.attack.forcefield_shock": "%1$s has been decomposed by the strong impact of the force field.",
   "description.powered_defences.item.horizontal_forcefield_barrier": "§7It uses electricity to form a force field to create a barrier. From simply blocking bullets to restricting access to all unauthorized entities.",
   "description.powered_defences.item.vertical_forcefield_barrier": "§7It uses electricity to form a force field to create a barrier. From simply blocking bullets to restricting access to all unauthorized entities.",
-  "death.attack.disintegration": "%1$s has been disintegrated into atom unit."
+  "death.attack.disintegration": "%1$s has been disintegrated into atom unit.",
+  "description.powered_defences.tooltip.key.show_description": "§7Hold §b%s §7for description."
 }

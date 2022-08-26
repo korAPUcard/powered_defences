@@ -21,13 +21,13 @@ This MOD will add variable protection devices and defense systems to secure your
     side="BOTH"
 
 
+
 [[dependencies.powered_defences]]
-    modId="mekanism"
-    mandatory=true
+    modId="apuclib"
+    mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.powered_defences]]
     modId="mekanism"
     mandatory=false
