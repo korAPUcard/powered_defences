@@ -6,7 +6,7 @@
   "description.powered_defences.tooltip.key.show_description": "§7Hold §b%s §7for description.",
   "block.powered_defences.forcefield_barrier_vertical_block": "§bVertical Forcefield Block",
   "block.powered_defences.forcefield_barrier_horizontal_single": "§bHorizontal Forcefield Barrier (Single)",
-  "itemGroup.tabpowered_defences": "Powered Defences",
+  "itemGroup.tab_powered_defences": "Powered Defences",
   "block.powered_defences.forcefield_barrier_vertical_single": "§bVertical Forcefield Barrier (Single)",
   "description.powered_defences.item.netherite_plate": "§7A very hard metal plate pressed from the hardest alloy on the planet.",
   "subtitles.forcefield_barrier_deactivated": "Forcefield barrier deactivated",
