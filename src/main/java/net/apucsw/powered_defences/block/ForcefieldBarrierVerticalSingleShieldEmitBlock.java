@@ -1,6 +1,7 @@
 
 package net.apucsw.powered_defences.block;
 
+import net.apucsw.powered_defences.procedures.Forcefield_TickUpdateProcedure;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -162,8 +163,8 @@ public class ForcefieldBarrierVerticalSingleShieldEmitBlock extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		FFBV_TickUpdateProcedure.execute(world, x, y, z, blockstate);
-		world.scheduleTick(pos, this, 10);
+		Forcefield_TickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 40);
 	}
 
 	@OnlyIn(Dist.CLIENT)

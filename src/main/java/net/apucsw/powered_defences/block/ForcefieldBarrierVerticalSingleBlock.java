@@ -169,17 +169,6 @@ public class ForcefieldBarrierVerticalSingleBlock extends Block implements Simpl
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-
-		FFBV_TickUpdateProcedure.execute(world, x, y, z, blockstate);
-		world.scheduleTick(pos, this, 10);
-	}
-
-	@Override
 	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
 		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
 		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;

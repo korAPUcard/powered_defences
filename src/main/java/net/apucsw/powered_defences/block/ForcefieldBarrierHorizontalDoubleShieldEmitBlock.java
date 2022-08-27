@@ -1,6 +1,8 @@
 
 package net.apucsw.powered_defences.block;
 
+import net.apucsw.powered_defences.procedures.Forcefield_TickUpdateProcedure;
+import net.minecraft.server.level.ServerLevel;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -134,6 +136,17 @@ public class ForcefieldBarrierHorizontalDoubleShieldEmitBlock extends Block
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		FFBH_NeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		Forcefield_TickUpdateProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 40);
 	}
 
 	@OnlyIn(Dist.CLIENT)

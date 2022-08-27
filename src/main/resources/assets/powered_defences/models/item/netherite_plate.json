@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "powered_defences:items/netherite_plate"
+    "layer0": "powered_defences:item/netherite_plate"
   }
 }
