@@ -1,9 +1,9 @@
 {
-  "parent": "powered_defences:custom/forcefield_barrier_horizontal_double",
+  "parent": "powered_defences:forcefield_barrier_horizontal_double",
   "textures": {
-    "all": "powered_defences:blocks/forcefield_barrier",
-    "particle": "powered_defences:blocks/forcefield_barrier",
-    "0": "powered_defences:blocks/forcefield_barrier",
-    "1": "powered_defences:blocks/forcefield_barrier_powered"
+    "all": "powered_defences:block/models/forcefield_barrier",
+    "particle": "powered_defences:block/models/forcefield_barrier",
+    "0": "powered_defences:block/models/forcefield_barrier",
+    "1": "powered_defences:block/models/forcefield_barrier_powered"
   }
 }

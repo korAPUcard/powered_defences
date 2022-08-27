@@ -1,6 +1,9 @@
-
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *		Originally generated from MCreator.
+ *
+ *		It's no longer MCreator project.
+ *		Because the MCreator is suck.
+ *
  */
 package net.apucsw.powered_defences.init;
 

@@ -1,4 +1,3 @@
-
 package net.apucsw.powered_defences.network;
 
 import net.minecraftforge.network.NetworkEvent;

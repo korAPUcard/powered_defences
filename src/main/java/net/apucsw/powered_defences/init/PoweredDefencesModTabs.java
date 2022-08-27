@@ -1,6 +1,9 @@
-
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *		Originally generated from MCreator.
+ *
+ *		It's no longer MCreator project.
+ *		Because the MCreator is suck.
+ *
  */
 package net.apucsw.powered_defences.init;
 
@@ -14,7 +17,7 @@ public class PoweredDefencesModTabs {
 	public static CreativeModeTab TAB_POWERED_DEFENCES;
 
 	public static void load() {
-		TAB_POWERED_DEFENCES = new CreativeModeTab("tabpowered_defences") {
+		TAB_POWERED_DEFENCES = new CreativeModeTab("tab_powered_defences") {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(PoweredDefencesModItems.VERTICAL_FORCEFIELD_BARRIER.get());

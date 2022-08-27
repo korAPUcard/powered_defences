@@ -1,17 +1,11 @@
 /**
- * The code of this mod element is always locked.
+ *		Originally generated from MCreator.
+ *		After edited in IntelliJ IDEA.
  *
- * You can register new events in this class too.
+ *		It's no longer MCreator project.
+ *		Because the MCreator is suck.
  *
- * If you want to make a plain independent class, create it using
- * Project Browser -> New... and make sure to make the class
- * outside net.apucsw.powered_defences as this package is managed by MCreator.
- *
- * If you change workspace package, modid or prefix, you will need
- * to manually adapt this file to these changes or remake it.
- *
- * This class will be added in the mod root package.
-*/
+ */
 package net.apucsw.powered_defences.util;
 
 import net.minecraft.world.damagesource.DamageSource;
