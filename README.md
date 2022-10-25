@@ -26,8 +26,8 @@ Most devices will required the power. Commonly used Forge Energy(FE).
 | --- | --- |
 | 1.19 | *Not planned yet* |
 | 1.18 | **In development** |
-| ~~1.17~~ | ~~Skipped~~ |
-| 1.16 | Suspended |
+| ~~1.17~~ | Skipped |
+| ~~1.16~~ | Skipped |
 
 -----
 
