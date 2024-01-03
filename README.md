@@ -24,10 +24,14 @@ Most devices will required the power. Commonly used Forge Energy(FE).
 
 | MC version | Status               |
 |------------|----------------------|
-| 1.19       | ***Planning***    |
-| 1.18       | **Work in progress** |
+| 1.20       | Work in progress     |
+| ~~1.19~~   | Canceled             |
+| ~~1.18~~   | Canceled             |
 | ~~1.17~~   | Skipped              |
 | ~~1.16~~   | Skipped              |
+
+The reason why the 1.18.x and 1.19.x has been stopped to development forever, because I have changed my computer to new and most old repositories has been corrupted during data transfer.   
+I had tried to fix this problem, but keeps failed. So I decided to focuses creates new one.
 
 -----
 
