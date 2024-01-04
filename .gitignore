@@ -11,22 +11,16 @@ out
 *.ipr
 *.iws
 *.iml
-.idea/
-.settings/
+.idea
 
 # gradle
-.gradle/
-build/
-build.gradle
-gradle.properties
-gradlew.bat
+build
+.gradle
 
 # other
-eclipse/
-run/
-
-# MacOS system files
-.DS_STORE
+eclipse
+run
+nppBackup
 
 # Files from Forge MDK
 forge*changelog.txt
